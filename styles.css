@@ -6,11 +6,15 @@
 --VeryPaleCyan: hsl(193, 100%, 96%);
 --VeryDarkCyan: hsl(192, 100%, 9%);
 --GrayishBlue: hsl(208, 11%, 55%);
---shadow: 0 0 5px 2px var(--VeryPaleCyan);
+--shadow: 0 0 10px 5px var(--VeryPaleCyan);
+--border:1px solid var(--VeryPaleCyan);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
 *{
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -20,18 +24,29 @@ html{
 body{
     font-size: 1.8rem;
     color: var(--GrayishBlue);
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1,
 h2{
     color: var(--VeryDarkCyan);
+    font-family: "Poppins", sans-serif;
 }
 
 h1{
     font-size: 3rem;
 }
 h2{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+}
+p{
+    padding: 0 .5rem;
+}
+
+.first{
+    background-color: var(--VeryPaleCyan);
+    background-image: url(images/bg-hero-mobile.svg);
 }
 
 .nav{
@@ -47,10 +62,53 @@ h2{
 }
 
 .btn{
-    border-radius: 20px;
+    border-radius: 25px;
     border: 0;
     box-shadow: var(--shadow);
+    cursor: pointer;
+    font-weight: 700;
 }
 .btn_nav{
-    padding: 1rem 4rem;
+    padding: .8rem 3rem;
+    background: white;
+    border:var(--border) ;
+}
+.btn_pink{
+    background: var(--Pink);
+    padding: 1.5rem 5rem;
+    margin: 1rem 0;
+}
+
+.card{
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid var(--VeryPaleCyan);
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+    padding: 2rem;
+}
+.position{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.position img{
+    width:80%;
+}
+
+.main_part{
+    padding: 2rem 0rem;
+    color: var(--VeryDarkCyan);
+}
+.image-part{
+    margin: 3rem 0 2rem 0;
+}
+.text-part{
+    margin: 2rem;
+}
+
+.body_part{
+display: flex;
+flex-direction: column;
+align-items: center;
 }

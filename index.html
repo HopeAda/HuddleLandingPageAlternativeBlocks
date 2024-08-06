@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/05d1290b0d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
@@ -12,28 +13,31 @@
 </head>
 <body>
 
-  <span class="nav">
-    <img src="images/logo.svg" alt="" class="logo">
-    <button class="btn btn_nav">
-      Try It Free
-    </button>
-  </span>
+  <div class="first">
+    <span class="nav">
+      <img src="images/logo.svg" alt="" class="logo">
+      <button class="btn btn_nav">
+        Try It Free
+      </button>
+    </span>
 
-  <span class="main">
-  <article class="image-part">
-    <img src="images/illustration-mockups.svg" alt="">
-  </article>
-    <article class="text-part">
-      <h1>  Build The Community Your Fans Will Love
-      </h1>
-      <p>  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-        Create connections with your users as you engage in genuine discussion. </p>
-      <button class="btn btn_pink">Get Started For Free</button>
-    </article>
-  </span>
+
+    <span class="main_part position">
+      <article class="text-part">
+        <h1>  Build The Community Your Fans Will Love
+        </h1>
+        <p>  Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+          Create connections with your users as you engage in genuine discussion. </p>
+          <button class="btn btn_pink">Get Started For Free</button>
+        </article>
+        <article class="image-part">
+          <img src="images/illustration-mockups.svg" alt="">
+        </article>
+    </span>
+  </div>
 
 <span class="body_part">
-  <div class="card">
+  <div class="card position">
     <article class="image-part"><img src="images/illustration-grow-together.svg" alt=""></article>
     <article class="text-part"> <h2>Grow Together</h2> 
 <p>  Generate meaningful discussions with your audience and build a strong, loyal community. 
@@ -41,7 +45,7 @@
 </p>
 </article>
   </div>
-  <div class="card">
+  <div class="card position">
     <article class="image-part"><img src="images/illustration-flowing-conversation.svg" alt=""></article>
     <article class="text-part">  <h2>Flowing Conversations</h2>
 <p>  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
@@ -49,7 +53,7 @@
 </p>
 </article>
   </div>
-  <div class="card">
+  <div class="card position">
     <article class="image-part"><img src="images/illustration-your-users.svg" alt=""></article>
     <article class="text-part">  <h2>Your Users</h2>
 <p>  It takes no time at all to integrate Huddle with your app's authentication solution. 
@@ -59,7 +63,7 @@
   </div>
 </span>
 
-<span class="invite">
+<span class="invite position">
   <h2>  Ready To Build Your Community?
 </h2>
   <button class="btn btn_pink">  Get Started For Free
@@ -85,7 +89,11 @@
       <a href="#">Blog</a>
       <a href="#">Contact Us</a>
     </article>
-    <article class="three"></article>
+    <article class="three">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </article>
   </span>
 </div>
 
