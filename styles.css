@@ -1,16 +1,15 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); margin: 0;}
 :root{
 --Pink: hsl(322, 100%, 66%);
 --VeryPaleCyan: hsl(193, 100%, 96%);
 --VeryDarkCyan: hsl(192, 100%, 9%);
 --GrayishBlue: hsl(208, 11%, 55%);
---shadow: 0 0 10px 5px var(--VeryPaleCyan);
+--shadow: 0 1px 10px 2px rgba(216, 211, 211, 0.4) ;
 --border:1px solid var(--VeryPaleCyan);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
 *{
     padding: 0;
@@ -22,23 +21,33 @@ html{
 }
 
 body{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--GrayishBlue);
     margin: 0;
     font-family: "Open Sans", sans-serif;
+    display: flex;
+flex-direction: column;
+align-items: center;
+line-height: 1.5;
+
 }
 
 h1,
-h2{
+h2,
+h3{
     color: var(--VeryDarkCyan);
     font-family: "Poppins", sans-serif;
+    letter-spacing: .5;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 h2{
     font-size: 2.3rem;
+}
+h3{
+    font-size: 1.9rem;
 }
 p{
     padding: 0 .5rem;
@@ -47,6 +56,7 @@ p{
 .first{
     background-color: var(--VeryPaleCyan);
     background-image: url(images/bg-hero-mobile.svg);
+    padding: 0 2rem;
 }
 
 .nav{
@@ -67,22 +77,24 @@ p{
     box-shadow: var(--shadow);
     cursor: pointer;
     font-weight: 700;
+    font-family: "Open Sans", sans-serif;
 }
 .btn_nav{
     padding: .8rem 3rem;
     background: white;
     border:var(--border) ;
+    width: fit-content;
 }
 .btn_pink{
     background: var(--Pink);
     padding: 1.5rem 5rem;
     margin: 1rem 0;
+    color: white;
 }
 
 .card{
     width: 90%;
-    border-radius: 20px;
-    border: 1px solid var(--VeryPaleCyan);
+    border-radius: 15px;
     box-shadow: var(--shadow);
     margin: 2rem 0;
     padding: 2rem;
@@ -119,6 +131,8 @@ align-items: center;
 .footer{
     background-color: var(--VeryDarkCyan);
     color: white;
+    padding: 15rem 0 3rem 0;
+    width: 100%;
 }
 .media{
     display: flex;
@@ -133,4 +147,130 @@ align-items: center;
     position: relative;
     top: 20px;
     margin-left: 2rem;
+}
+
+.one, .two{
+    display: flex;
+    flex-direction: column;
+}
+.one{
+    margin-top: 2.5rem;
+}
+.two{
+    margin-bottom: 1rem;
+}
+.three{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 1rem 2rem;
+}
+
+.copy{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+i{
+    border: solid .5px white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: .5rem;
+}
+i:nth-of-type(1){
+    padding: 1rem 1.2rem;
+}
+
+.invite{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.8rem;
+    box-shadow: var(--shadow);
+    width: 92%;
+    border-radius: 15px;
+    background-color: white;
+    top: 60px;
+    position: relative;
+    }
+
+.invite button{
+    align-self: center;
+}
+
+@media screen and (min-width:830px) {
+    .position{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 35rem;
+        grid-template-areas: "First Second";
+        justify-content: center;
+        align-items: center;
+
+    }
+    .position .text-part{
+       text-align: left;
+
+    }
+    .reverse .text-part{
+        grid-area: First;
+    }
+    .reverse .image-part{
+        grid-area: Second;
+    }
+   
+    .invite{
+        width: fit-content;
+        padding: 3rem 10rem;
+
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-inner{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "media one two three";
+        width: 80%;
+    }
+    .info{
+        grid-area: media;
+    }
+    .media p{
+        padding: 1rem 0;
+        margin-left: 2.5rem;
+    }
+    .media img{
+        top: 15px;
+    }
+    .one{
+        grid-area: one;
+        margin: 0;
+    }
+    .two{
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+        margin: 0;
+    }
+    i{
+        height: fit-content;
+    }
+    .copy{
+        text-align: right;
+        width: 80%;
+    }
+    
 }

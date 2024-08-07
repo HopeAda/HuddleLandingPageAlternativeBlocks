@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/05d1290b0d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
@@ -37,7 +40,7 @@
   </div>
 
 <span class="body_part">
-  <div class="card position">
+  <div class="card position reverse">
     <article class="image-part"><img src="images/illustration-grow-together.svg" alt=""></article>
     <article class="text-part"> <h2>Grow Together</h2> 
 <p>  Generate meaningful discussions with your audience and build a strong, loyal community. 
@@ -53,7 +56,7 @@
 </p>
 </article>
   </div>
-  <div class="card position">
+  <div class="card position reverse">
     <article class="image-part"><img src="images/illustration-your-users.svg" alt=""></article>
     <article class="text-part">  <h2>Your Users</h2>
 <p>  It takes no time at all to integrate Huddle with your app's authentication solution. 
@@ -63,30 +66,31 @@
   </div>
 </span>
 
-<span class="invite position">
-  <h2>  Ready To Build Your Community?
-</h2>
-  <button class="btn btn_pink">  Get Started For Free
-</button>
+<span class="invite">
+  <h3>  Ready To Build Your Community?
+</h3>
+  <button class="btn btn_pink">Get Started For Free</button>
 </span>
 
 <div class="footer">
   <span class="footer-inner">
-    <div class="media">  
-      <img src="images/icon-location.svg" alt="">
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua
-    </p>
-  </div>
-  <div class="media"> 
-    <img src="images/icon-phone.svg" alt="">
-    <p>+1-543-123-4567</p>
-  </div>
-  <div class="media">  
-    <img src="images/icon-email.svg" alt="">
-    <p>example@huddle.com</p>
-  </div>
+    <span class="info">
+      <div class="media">
+        <img src="images/icon-location.svg" alt="">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua
+      </p>
+        </div>
+        <div class="media">
+      <img src="images/icon-phone.svg" alt="">
+      <p>+1-543-123-4567</p>
+        </div>
+        <div class="media">
+      <img src="images/icon-email.svg" alt="">
+      <p>example@huddle.com</p>
+        </div>
+    </span>
     <article class="one">
       <a href="#">About Us</a>
       <a href="#">What We Do</a>
@@ -98,15 +102,15 @@
       <a href="#">Contact Us</a>
     </article>
     <article class="three">
-      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-facebook-f"></i>
       <i class="fa-brands fa-twitter"></i>
       <i class="fa-brands fa-instagram"></i>
     </article>
   </span>
+  <p class="copy">&copy; Copyright 2018 Huddle. All rights reserved.</p>
 </div>
 
 
-  &copy; Copyright 2018 Huddle. All rights reserved.
 
   <footer>
     <p class="attribution">
