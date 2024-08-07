@@ -204,6 +204,10 @@ i:nth-of-type(1){
 .invite button{
     align-self: center;
 }
+.footerimg{
+    height: 30px;
+    margin: 1rem 2rem;
+}
 
 @media screen and (min-width:830px) {
     .position{
@@ -242,7 +246,7 @@ i:nth-of-type(1){
         grid-template-columns: 2fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: "media one two three";
-        width: 80%;
+        width: 85%;
     }
     .info{
         grid-area: media;
