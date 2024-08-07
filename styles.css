@@ -244,12 +244,18 @@ i:nth-of-type(1){
     .footer-inner{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "media one two three";
+        grid-template-rows:  auto auto;
+        grid-template-areas: 
+        "img . . ."
+        "media one two three";
         width: 85%;
     }
     .info{
         grid-area: media;
+    }
+    .footerimg{
+        grid-area: img;
+       
     }
     .media p{
         padding: 1rem 0;
